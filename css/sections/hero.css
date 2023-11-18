@@ -1,0 +1,143 @@
+/* _________________________ MAIN _________________________ */
+
+.main {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+/* ____________________ Hero (SECTION) ____________________ */
+
+.hero {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: var(--borrad);
+}
+
+.hero__block {
+    position: relative;
+    z-index: 5;
+    padding-left: 80px;
+    max-width: 1000px;
+}
+
+.hero__title {
+    padding-bottom: 24px;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+.hero__descr {
+    padding-bottom: 90px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+    color: var(--color_white);
+}
+
+/* _____ Order Button _____ */
+
+.hero__order-btn {
+    padding: 25px 39px;
+    max-width: 280px;
+    border-radius: var(--borrad-3);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: normal;
+    color: var(--color_white);
+    background-color: var(--color_orange-1);
+    transition: background-color 0.3s ease;
+}
+
+/* -(pseudo-elements for Order Button) --- */
+
+.hero__order-btn:focus-visible {
+    background-color: var(--color_orange-3);
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .hero__order-btn:hover {
+        background-color: var(--color_orange-3);
+        transition: background-color 0.3s ease;
+    }
+}
+
+.hero__order-btn:active {
+    background-color: var(--color_orange-2);
+    transition: background-color 0.3s ease;
+}
+
+/* ----- SWIPER ----- */
+
+.hero__swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    max-width: 1770px;
+    height: 620px;
+}
+
+.hero__swiper-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero__background-one,
+.hero__background-two,
+.hero__background-three {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--borrad);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__background-one {
+    background: url('../../img/hero/hero__background-one.jpg');
+}
+
+.hero__background-two {
+    background: url('../../img/hero/hero__background-two.jpg');
+}
+
+.hero__background-three {
+    background: url('../../img/hero/hero__background-three.jpg');
+}
+
+.hero__pagination {
+    padding-bottom: 30px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 0px);
+    left: 6px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 16px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: var(--color_gray-1);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color_white);
+}

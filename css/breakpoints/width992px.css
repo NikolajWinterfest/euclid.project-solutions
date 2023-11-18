@@ -1,0 +1,228 @@
+@media (max-width: 992px) {
+    /* _________________________ GLOBAL _________________________ */
+
+    .container {
+        max-width: 768px;
+    }
+
+    /* _________________________ HEADER _________________________ */
+
+    .header {
+        height: 69px;
+        border-end-start-radius: var(--borrad-2);
+        border-end-end-radius: var(--borrad-2);
+    }
+
+    /* ----- Burger Menu Active ----- */
+
+    .menu__overlay {
+        max-width: 420px;
+        height: 771px;
+    }
+
+    /* _________________________ MAIN _________________________ */
+
+    .main {
+        padding-top: 109px;
+        padding-bottom: 63px;
+    }
+
+    /* ____________________ Hero (SECTION) ____________________ */
+
+    .hero {
+        padding-top: 20%;
+        padding-bottom: 22%;
+    }
+
+    .hero__block {
+        padding-left: 40px;
+        max-width: 630px;
+    }
+
+    .hero__title {
+        padding-bottom: 16px;
+        font-size: 50px;
+    }
+
+    .hero__descr {
+        padding-bottom: 60px;
+    }
+
+    /* ----- SWIPER ----- */
+
+    .hero__swiper {
+        max-width: 668px;
+        height: 662px;
+    }
+
+    .hero__background-one,
+    .hero__background-two,
+    .hero__background-three {
+        border-radius: var(--borrad-2);
+    }
+
+    .hero__background-one {
+        background: url('../../img/hero/hero__background-one\(768p\).jpg');
+    }
+
+    .hero__background-two {
+        background: url('../../img/hero/hero__background-two\(768p\).jpg');
+    }
+
+    .hero__background-three {
+        background: url('../../img/hero/hero__background-three\(768p\).jpg');
+    }
+
+    /* ____________________ AboutUs (SECTION) ____________________ */
+
+    .aboutus {
+        padding-top: 75px;
+    }
+
+    /* __________ Our Activity Description (Subblock) __________ */
+
+    .ourwork {
+        padding-top: 54px;
+    }
+
+    /* __________ Our Activity Description (First Subblock) __________ */
+
+    .subblock-first {
+        margin-bottom: 32px;
+        max-width: 668px;
+        height: 650px;
+        border-radius: var(--borrad-2);
+        background: url('../../img/aboutus/aboutus__background\(768p\).jpg');
+    }
+
+    .subblock-first__descrblock {
+        padding: 34px;
+        padding-left: 40px;
+        border-radius: var(--borrad-2);
+    }
+
+    .subblock-first__descr {
+        max-width: 365px;
+    }
+
+    /* _____ Button More _____ */
+
+    .item-more__btn {
+        margin-right: 6px;
+        padding: 18px 36px;
+    }
+
+    /* __________ Our Activity Description (Second Subblock) __________ */
+
+    .item-subblock__list {
+        align-items: center;
+        padding: 35px 0 34px 39px;
+        border-radius: var(--borrad-2);
+    }
+
+    .item-subblock__item {
+        margin-right: 16px;
+    }
+
+    /* ____________________ Stages (SECTION) ____________________ */
+
+    /* __________ Stages Steps (TABS) __________ */
+
+    .steps {
+        padding-bottom: 34px;
+    }
+
+    .steps__list {
+        justify-content: space-between;
+    }
+
+    .services-stages {
+        flex-direction: column-reverse;
+    }
+
+    /* __________ Picture Block (TABS) ___________ */
+
+    .pictureblock {
+        padding-top: 11px;
+        padding-bottom: 35px;
+    }
+
+    /* __________ Details Services (TABS) __________ */
+
+    .details-stages__descr {
+        max-width: 667px;
+    }
+
+    /* ____________________ Questions (SECTION) ____________________ */
+
+    .questions {
+        padding-top: 49px;
+    }
+
+    .item-acc__title {
+        padding: 38px 0 38px 0;
+        max-width: 575px;
+    }
+
+    .item-acc__btn-icon {
+        max-width: 50px;
+        width: 100%;
+    }
+
+    .accordion__item:nth-child(2) .item-acc__title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .accordion__item:nth-child(3) .item-acc__title {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .accordion__item:nth-child(4) .item-acc__title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .accordion__item:nth-child(5) .item-acc__title {
+        padding-top: 28px;
+        padding-bottom: 27px;
+    }
+
+    /* _________________________ FOOTER _________________________ */
+
+    .footer {
+        padding-bottom: 32px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    /* __________ Footer (BLOCK 2 - Leave application)  __________ */
+
+    .leaveapplication {
+        padding-bottom: 50px;
+        max-width: 541px;
+    }
+
+    /* _____ Send Data Button _____ */
+
+    .leaveapplication__btnblock-btn {
+        padding: 20px 38px;
+    }
+
+    /* __________ Footer (BLOCK 1 - information) __________ */
+
+    .footerinfo__logoblock {
+        margin-bottom: 5px;
+    }
+
+    .footerinfo__list {
+        display: none;
+    }
+
+    .footerinfo__socialnetworks {
+        transform: translate(-6px, -7px);
+    }
+}

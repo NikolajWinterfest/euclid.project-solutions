@@ -1,0 +1,40 @@
+/* _________________________ GLOBAL _________________________ */
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1800px;
+}
+
+.flex {
+    display: flex;
+}
+
+.select-none {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root {
+    --borrad: 32px;
+    --borrad-2: 24px;
+    --borrad-3: 16px;
+    --color_white: #FFFFFF;
+    --color_black: #000000;
+    --color_orange-1: #FF9900;
+    --color_orange-2: #E1670E;
+    --color_orange-3: #FFB84D;
+    --color_gray-1: #CACACA;
+    --color_gray-2: #666666;
+    --color_gray-3: #414141;
+}

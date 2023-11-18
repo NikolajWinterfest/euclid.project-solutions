@@ -1,0 +1,296 @@
+/* _________________________ FOOTER _________________________ */
+
+.footer {
+    padding: 49px 0 41px 0;
+    background-color: var(--color_black);
+}
+
+.footer__wrapper {
+    justify-content: space-between;
+}
+
+.footerinfo {
+    flex-direction: column;
+    margin-right: 35px;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* __________ Footer (BLOCK 1 - information) __________ */
+
+.footerinfo__logoblock {
+    padding: 2px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transform: translate(-5px, -3px);
+    transition: border-color 0.3s ease;
+}
+
+.footerinfo__picture-icon {
+    cursor: pointer;
+}
+
+.footerinfo__list {
+    padding-top: 8px;
+    padding-bottom: 83px;
+    flex-direction: column;
+}
+
+.footerinfo__item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.footerinfo__item-link {
+    padding: 2px;
+    border: 2px solid transparent;
+    color: var(--color_gray-1);
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+/* -(pseudo-elements for Footer Link's and Logo)- */
+
+.footerinfo__logoblock:focus-visible,
+.footerinfo__item-link:focus-visible {
+    border-color: var(--color_orange-1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .footerinfo__item-link:hover {
+        color: var(--color_orange-1);
+        transition: color 0.3s ease;
+    }
+
+    .footerinfo__item-link:hover:focus-visible {
+        color: var(--color_orange-1);
+        border-color: transparent;
+        transition: color 0.3s ease, border-color 0.3s ease;
+    }
+}
+
+.footerinfo__item-link:active:focus-visible {
+    color: var(--color_orange-2);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.footerinfo__item-link:active {
+    color: var(--color_orange-2);
+    transition: color 0.3s ease;
+}
+
+/* _____ Social Network Link's _____ */
+
+.footerinfo__socialnetworks {
+    transform: translateX(-7px);
+}
+
+.socialnetworks__one {
+    margin-right: 13px;
+}
+
+.socialnetworks__one,
+.socialnetworks__two {
+    padding: 4px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.socialnetworks__one-icon,
+.socialnetworks__two-icon {
+    cursor: pointer;
+    fill: var(--color_gray-2);
+    transition: fill 0.3s ease;
+}
+
+/* -(pseudo-elements for Social Network's)- */
+
+.socialnetworks__one:focus-visible,
+.socialnetworks__two:focus-visible {
+    border-color: var(--color_orange-1);
+    outline: none;
+    transition: border-color 0.3s ease, fill 0.3s ease;
+}
+
+@media (any-hover: hover) {
+
+    .socialnetworks__one:hover:focus-visible,
+    .socialnetworks__two:hover:focus-visible {
+        border-color: transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .socialnetworks__one:hover .socialnetworks__one-icon,
+    .socialnetworks__two:hover .socialnetworks__two-icon {
+        fill: var(--color_orange-1);
+        transition: fill 0.3s ease;
+    }
+}
+
+.socialnetworks__one:active .socialnetworks__one-icon,
+.socialnetworks__two:active .socialnetworks__two-icon {
+    fill: var(--color_orange-2);
+    transition: fill 0.3s ease;
+}
+
+/* __________ Footer (BLOCK 2 - Leave application)  __________ */
+
+.leaveapplication {
+    flex-direction: column;
+    max-width: 575px;
+    width: 100%;
+}
+
+.leaveapplication__title {
+    padding-bottom: 27px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: normal;
+    color: var(--color_gray-1);
+}
+
+/* _____ Persondata Input's _____ */
+
+.leaveapplication__persondata {
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.leaveapplication__persondata-name,
+.leaveapplication__persondata-email,
+.leaveapplication__persondata-message {
+    padding: 21px 0;
+    padding-left: 24px;
+    max-width: 570px;
+    width: 100%;
+    border-radius: var(--borrad-3);
+    color: var(--color_gray-1);
+    background-color: var(--color_gray-3);
+    transition: background-color 0.3s ease;
+}
+
+.leaveapplication__persondata-name,
+.leaveapplication__persondata-email {
+    margin-bottom: 24px;
+}
+
+.leaveapplication__persondata-message {
+    padding-bottom: 111px;
+}
+
+/* -(pseudo-elements for Input's)- */
+
+@media (any-hover: hover) {
+
+    .leaveapplication__persondata-name:focus-visible,
+    .leaveapplication__persondata-email:focus-visible,
+    .leaveapplication__persondata-message:focus-visible,
+    .leaveapplication__persondata-name:hover,
+    .leaveapplication__persondata-email:hover,
+    .leaveapplication__persondata-message:hover {
+        background-color: var(--color_gray-2);
+        transition: background-color 0.3s ease;
+    }
+}
+
+/* _____ Send Data Button _____ */
+
+.leaveapplication__btnblock-btn {
+    margin-right: 20px;
+    padding: 19px 52px;
+    max-width: 269px;
+    border-radius: var(--borrad-3);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color_white);
+    background-color: var(--color_orange-1);
+    transition: background-color 0.3s ease;
+}
+
+/* -(pseudo-elements for Button)- */
+
+.leaveapplication__btnblock-btn:focus-visible {
+    background-color: var(--color_orange-3);
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .leaveapplication__btnblock-btn:hover {
+        background-color: var(--color_orange-3);
+        transition: background-color 0.3s ease;
+    }
+}
+
+.leaveapplication__btnblock-btn:active {
+    background-color: var(--color_orange-2);
+    transition: background-color 0.3s ease;
+}
+
+/* _____ Confirmation Input _____ */
+
+.send-confirm {
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.send-confirm__blank {
+    position: relative;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 20px;
+    color: var(--color_gray-1);
+    cursor: pointer;
+}
+
+/* -(pseudo-elements for Input Of Confirmation)- */
+
+.send-confirm__blank::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 29%;
+    left: 1px;
+    right: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color_gray-1);
+    border-radius: 2px;
+    color: var(--color_gray-1);
+}
+
+.send-confirm__checkbox:focus-visible+.send-confirm__blank::before {
+    outline: 2px solid var(--color_orange-1);
+}
+
+.send-confirm__checkbox:checked+.send-confirm__blank::before {
+    background: url('../../img/footer/footer__confim.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* __________ Footer (BLOCK 3 - Description)  __________ */
+
+.footer__description {
+    padding-left: 15px;
+}
+
+.footer__description-info {
+    padding-top: 88px;
+    max-width: 363px;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_gray-1);
+}

@@ -1,0 +1,212 @@
+/* ____________________ Stages (SECTION) ____________________ */
+
+.stages {
+    padding-top: 101px;
+}
+
+.stages__title {
+    padding-bottom: 46px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: normal;
+}
+
+/* __________ Stages Steps (TABS) __________ */
+
+.steps {
+    padding-bottom: 42px;
+}
+
+.steps__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.steps__item:not(:last-child) {
+    margin-right: 74px;
+}
+
+/* _____ (TABS) Button's _____ */
+
+.steps__item-btn {
+    padding: 3px;
+    max-width: 250px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.steps__item-btn--active {
+    color: var(--color_orange-2)
+}
+
+/* -(pseudo-elements for (TABS) Button's)- */
+
+.steps__item-btn:focus-visible {
+    border-color: var(--color_orange-1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .steps__item-btn:hover {
+        color: var(--color_orange-1);
+        transition: color 0.3s ease;
+    }
+
+    .steps__item-btn:hover:focus-visible,
+    .steps__item-btn:active:focus-visible {
+        border-color: transparent;
+        transition: border-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+.steps__item-btn:active {
+    color: var(--color_orange-2);
+    transition: color 0.3s ease;
+}
+
+/* __________ Details Services (TABS) __________ */
+
+.services-stages {
+    justify-content: space-between;
+}
+
+.details-stages {
+    flex-direction: column;
+}
+
+.details-stages__item {
+    display: none;
+    visibility: hidden;
+}
+
+.details-stages__title {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px
+}
+
+.details-stages__descr {
+    padding-bottom: 17px;
+    max-width: 707px;
+    font-size: 16px;
+    line-height: 32px
+}
+
+/* _____ Buttonsgroup More and Agreement _____ */
+
+.buttonsgroup__more {
+    margin-right: 27px;
+    padding: 20px 38px;
+    max-width: 250px;
+    border-radius: var(--borrad-3);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_white);
+    background-color: var(--color_orange-1);
+    transition: background-color 0.3s ease;
+}
+
+.buttonsgroup__agreement {
+    padding: 20px 38px;
+    max-width: 250px;
+    border: 1px solid var(--color_black);
+    border-radius: var(--borrad-3);
+    font-size: 16px;
+    line-height: normal;
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+/* -(pseudo-elements for Buttonsgroup)- */
+
+.buttonsgroup__more:focus-visible {
+    background-color: var(--color_orange-3);
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .buttonsgroup__more:hover {
+        background-color: var(--color_orange-3);
+        transition: background-color 0.3s ease;
+    }
+}
+
+.buttonsgroup__more:active {
+    background-color: var(--color_orange-2);
+    transition: background-color 0.3s ease;
+}
+
+.buttonsgroup__agreement:focus-visible {
+    color: var(--color_white);
+    border-color: var(--color_gray-2);
+    background-color: var(--color_gray-2);
+    outline: none;
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .buttonsgroup__agreement:hover {
+        border-color: var(--color_gray-2);
+        color: var(--color_white);
+        background-color: var(--color_gray-2);
+        transition:
+            border-color 0.3s ease,
+            color 0.3s ease,
+            background-color 0.3s ease;
+    }
+}
+
+.buttonsgroup__agreement:active {
+    color: var(--color_white);
+    border-color: var(--color_black);
+    background-color: var(--color_black);
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+/* __________ Picture Block (TABS) ___________ */
+
+.pictureblock {
+    padding-top: 9px;
+}
+
+.pictureblock__item {
+    display: none;
+    visibility: hidden;
+}
+
+.pictureblock__picture-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ----- Animation (TABS) ----- */
+
+.tabs-active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    animation: tabs-animation 1s ease;
+}
+
+@keyframes tabs-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

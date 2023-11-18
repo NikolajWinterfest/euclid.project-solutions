@@ -1,0 +1,222 @@
+/* ____________________ Questions (SECTION) ____________________ */
+
+.questions {
+    padding-top: 107px;
+    padding-bottom: 51px;
+}
+
+.questions__title {
+    padding-bottom: 32px;
+    max-width: 1250px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: normal;
+}
+
+.accordion__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-acc {
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid var(--color_gray-1);
+    outline: none;
+    cursor: default;
+    transition: border-top 0.3s ease, border-bottom 0.3s ease;
+}
+
+.item-acc .item-acc__question {
+    transition: color 0.3s ease;
+}
+
+/* -(pesudo-elements for Items)- */
+
+.item-acc:last-child {
+    border-bottom: 1px solid var(--color_gray-1);
+    transition: border-top 0.3s ease, border-bottom 0.3s ease;
+}
+
+.item-acc:focus-visible {
+    border-top: 1px solid var(--color_orange-1);
+    transition: border-top 0.3s ease;
+}
+
+.item-acc:focus-visible+.item-acc:nth-child(1n) {
+    border-top: 1px solid var(--color_orange-1);
+    transition: border-top 0.3s ease;
+}
+
+.item-acc:focus-visible:last-child {
+    border-bottom: 1px solid var(--color_orange-1);
+    transition: border-bottom 0.3s ease;
+}
+
+.item-acc:focus-visible .item-acc__btn-icon {
+    fill: var(--color_orange-1);
+}
+
+.item-acc:focus-visible .item-acc__btn-icon path {
+    fill: var(--color_white);
+}
+
+.item-acc:focus-visible .item-acc__question {
+    color: var(--color_orange-1);
+    transition: color 0.3s ease;
+}
+
+.acc-item-active.item-acc:focus-visible {
+    border-top: 1px solid var(--color_gray-1);
+    transition: border-top 0.3s ease;
+}
+
+.acc-item-active.item-acc:focus-visible+.item-acc:nth-child(1n) {
+    border-top: 1px solid var(--color_gray-1);
+    transition: border-top 0.3s ease;
+}
+
+.acc-item-active.item-acc:focus-visible:last-child {
+    border-bottom: 1px solid var(--color_gray-1);
+    transition: border-bottom 0.3s ease;
+}
+
+.acc-item-active.item-acc:focus-visible .item-acc__btn-icon {
+    fill: var(--color_gray-1);
+}
+
+.acc-item-active.item-acc:focus-visible .item-acc__btn-icon path {
+    fill: var(--color_black);
+}
+
+.acc-item-active.item-acc:focus-visible .item-acc__title {
+    color: var(--color_black);
+    transition: color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .item-acc:hover:last-child {
+        border-bottom: 1px solid var(--color_orange-1);
+        transition: border-top 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    .item-acc:hover,
+    .item-acc:hover+.item-acc:nth-child(1n) {
+        border-top: 1px solid var(--color_orange-1);
+        transition: border-top 0.3s ease;
+    }
+
+    .acc-item-active:hover,
+    .acc-item-active:hover+.item-acc:nth-child(1n) {
+        border-top: 1px solid var(--color_gray-1);
+        transition: border-top 0.3s ease;
+    }
+
+    .acc-item-active:hover.item-acc:last-child {
+        border-bottom: 1px solid var(--color_gray-1);
+        transition: border-bottom 0.3s ease;
+    }
+}
+
+/* _____ Button Accordion _____ */
+
+.item-acc__title {
+    padding: 40px 0 36px 0;
+    max-width: 1250px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.item-acc__content-descr:not(:last-child) {
+    padding-bottom: 32px;
+}
+
+.item-acc__content-descr:last-child {
+    padding-bottom: 40px;
+}
+
+/* -(pseudo-elements for Accordion)- */
+
+.item-acc__question {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item-acc__btn-icon {
+    fill: var(--color_gray-1);
+    transition: fill 0.3s ease, transform 0.5s ease;
+}
+
+.item-acc__btn-icon path {
+    fill: var(--color_black);
+}
+
+.acc-btn-active .item-acc__btn-icon {
+    transform: rotate(135deg);
+    transition: fill 0.3s ease, transform 0.5s ease;
+}
+
+/* -(pseudo-elements for Icon of Button)- */
+
+@media (any-hover: hover) {
+    .item-acc__question:hover {
+        color: var(--color_orange-1);
+        transition: color 0.3s ease;
+    }
+
+    .item-acc__question:hover .item-acc__btn-icon {
+        fill: var(--color_orange-1);
+        transition: fill 0.3s ease, transform 0.5s ease;
+    }
+
+    .item-acc__question:hover .item-acc__btn-icon path {
+        fill: var(--color_white);
+    }
+
+    /* BTN ACTIVE */
+
+    .acc-btn-active.item-acc__question:hover {
+        color: var(--color_black);
+        transition: color 0.3s ease;
+    }
+
+    .acc-btn-active:hover .item-acc__btn-icon {
+        fill: var(--color_gray-1);
+    }
+
+    .acc-btn-active:hover .item-acc__btn-icon path {
+        fill: var(--color_black);
+        transition: fill 0.3s ease;
+    }
+}
+
+/* _____ Content Accordion _____ */
+
+.item-acc__content {
+    max-width: 1005px;
+    max-height: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+.item-acc__content-descr {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.acc-btn-active.item-acc__question {
+    fill: var(--color_gray-2);
+}
+
+.acc-content-active {
+    max-height: 500px;
+    transition: max-height 0.8s ease;
+}

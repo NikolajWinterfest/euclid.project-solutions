@@ -1,0 +1,135 @@
+/* ____________________ AboutUs (SECTION) ____________________ */
+
+.aboutus {
+    padding-top: 49px;
+}
+
+/* __________ Our Activity Description __________ */
+
+.ouractivity__title {
+    padding-bottom: 20px;
+    max-width: 1250px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: normal;
+}
+
+.ouractivity__descr {
+    max-width: 1250px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 32px;
+}
+
+/* __________ Our Activity Description (Subblock) __________ */
+
+.ourwork {
+    padding-top: 50px;
+}
+
+.ourwork__subblock__subblock {
+    justify-content: space-between;
+    min-height: 622px;
+}
+
+/* __________ Our Activity Description (First Subblock) __________ */
+
+.subblock-first {
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 32px;
+    max-width: 868px;
+    width: 100%;
+    border-radius: var(--borrad);
+    background: url('../../img/aboutus/aboutus__background.jpg');
+    background-size: cover;
+}
+
+.subblock-first__descrblock {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: var(--borrad);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subblock-first__descr {
+    max-width: 450px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_white);
+}
+
+.doubleblock {
+    display: none;
+}
+
+/* _____ Button More _____ */
+
+.item-more__btn {
+    padding: 19px 38px;
+    max-width: 250px;
+    border: 2px solid var(--color_orange-1);
+    border-radius: var(--borrad-3);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color_white);
+    transition: background-color 0.3s ease;
+}
+
+/* -(pseudo-elements for Button More)- */
+
+.item-more__btn:focus-visible {
+    background-color: var(--color_orange-1);
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .item-more__btn:hover {
+        background-color: var(--color_orange-1);
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+}
+
+.item-more__btn:active {
+    border-color: var(--color_orange-2);
+    background-color: var(--color_orange-2);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* __________ Our Activity Description (Second Subblock) __________ */
+
+.subblock-second {
+    max-width: 870px;
+    width: 100%;
+}
+
+.item-subblock:not(:last-child) {
+    margin-bottom: 29px;
+}
+
+.item-subblock__list {
+    padding: 65px 0 60px 60px;
+    border: 1px solid var(--color_gray-1);
+    border-radius: 35px;
+}
+
+.item-subblock__item {
+    margin-right: 50px;
+}
+
+.item-subblock__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+}
+
+.item-subblock__item-descr {
+    padding-top: 8px;
+    max-width: 450px;
+    font-size: 16px;
+    line-height: 32px;
+}

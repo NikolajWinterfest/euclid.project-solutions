@@ -1,0 +1,406 @@
+@media (max-width: 1366px) {
+    /* _________________________ GLOBAL _________________________ */
+
+    .container {
+        padding: 0 50px;
+        max-width: 1024px;
+    }
+
+    /* _________________________ HEADER _________________________ */
+    
+    .header {
+        border-end-start-radius: var(--borrad);
+        border-end-end-radius: var(--borrad);
+    }
+
+    /* _____ Block Logo (Block 1) _____ */
+
+    .nav {
+        position: relative;
+    }
+
+    .nav__logoblock {
+        transform: translate(5px, 2px);
+    }
+
+    .nav__menu {
+        order: -1;
+    }
+
+    .burger {
+        position: relative;
+        z-index: 16;
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transform: translateY(-1px);
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .burger__btn {
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .burger__btn-bar {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--color_black);
+        animation: line-vanishing-back 0.5s ease;
+    }
+
+    .burger__btn-bar::after,
+    .burger__btn-bar::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--color_black);
+        transform: translateY(-10px);
+    }
+
+    .burger__btn-bar::after {
+        transform: translateY(-10px);
+        animation: line-rotate-after-back 0.5s ease;
+    }
+
+    .burger__btn-bar::before {
+        transform: translateY(10px);
+        animation: line-rotate-before-back 0.5s ease;
+    }
+
+    /* ----- Burger Menu Active ----- */
+
+    .menu__list {
+        display: none;
+        padding-top: 100px;
+        max-width: 300px;
+        font-size: 24px;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .menu__item-link:last-child {
+        text-align: center;
+    }
+
+    .menu__item-link::after {
+        content: '';
+        position: absolute;
+        top: 34px;
+    }
+
+    .menu__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        max-width: 465px;
+        width: 100%;
+        height: 808px;
+        border-bottom-left-radius: var(--borrad);
+        border-bottom-right-radius: var(--borrad);
+        box-shadow: 0px 5px 20px 0px var(--color_gray-1);
+        background-color: var(--color_white);
+    }
+
+    .menu__overlay.is-active {
+        display: block;
+        animation: overlay-open 0.7s ease;
+    }
+
+    .menu__list.is-active {
+        position: absolute;
+        top: 0;
+        z-index: 15;
+        display: block;
+        animation: overlay-open 0.7s ease;
+    }
+
+    .is-active.burger__btn-bar {
+        width: 0;
+        animation: line-vanishing 0.5s ease;
+    }
+
+    .is-active.burger__btn-bar::after {
+        transform: rotate(-45deg);
+        animation: line-rotate-after 0.5s ease;
+    }
+
+    .is-active.burger__btn-bar::before {
+        transform: rotate(45deg);
+        animation: line-rotate-before 0.5s ease;
+    }
+
+    .burger.is-disable {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Animation for Burger Menu */
+
+    @keyframes line-vanishing {
+        0% {
+            width: 30px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+
+    @keyframes line-vanishing-back {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 30px;
+        }
+    }
+
+    @keyframes line-rotate-after {
+        0% {
+            transform: rotate(0deg);
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes line-rotate-after-back {
+        0% {
+            transform: rotate(45deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes line-rotate-before {
+        0% {
+            transform: rotate(0deg);
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @keyframes line-rotate-before-back {
+        0% {
+            transform: rotate(-45deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            transform: translateY(10px);
+        }
+    }
+
+    /* Animation for Menu List */
+
+    @keyframes overlay-open {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* __________ Menu Navigation __________ */
+
+    .activeblock.is-active {
+        z-index: 10;
+    }
+
+    /* _________________________ MAIN _________________________ */
+
+    .main {
+        padding-top: 140px;
+        padding-bottom: 29px;
+    }
+
+    /* ____________________ Hero (SECTION) ____________________ */
+
+    .hero {
+        padding-top: 17%;
+        padding-bottom: 18%;
+    }
+
+    .hero__block {
+        padding-left: 77px;
+        max-width: 780px;
+    }
+
+    .hero__title {
+        padding-bottom: 18px;
+        font-size: 60px;
+    }
+
+    .hero__descr {
+        padding-bottom: 63px;
+        font-size: 18px;
+    }
+
+    /* ----- SWIPER ----- */
+
+    .hero__swiper {
+        max-width: 924px;
+        height: 668px;
+    }
+
+    .hero__background-one {
+        background: url('../../img/hero/hero__background-one\(1024p\).jpg');
+    }
+
+    .hero__background-two {
+        background: url('../../img/hero/hero__background-two\(1024p\).jpg');
+    }
+
+    .hero__background-three {
+        background: url('../../img/hero/hero__background-three\(1024p\).jpg');
+    }
+
+    /* ____________________ AboutUs (SECTION) ____________________ */
+
+    .aboutus {
+        padding-top: 32px;
+    }
+
+    /* __________ Our Activity Description __________ */
+
+    .ouractivity__title {
+        padding-bottom: 21px;
+    }
+
+    /* __________ Our Activity Description (Subblock) __________ */
+
+    .ourwork {
+        padding-top: 59px;
+    }
+
+    .ourwork__subblock {
+        flex-direction: column;
+    }
+
+    .ouractivity__descr {
+        max-width: 924px;
+    }
+
+    /* __________ Our Activity Description (First Subblock) __________ */
+
+    .subblock-first {
+        margin-right: 0;
+        margin-bottom: 32px;
+        max-width: 924px;
+        height: 640px;
+        background: url('../../img/aboutus/aboutus__background\(1024p\).jpg');
+    }
+
+    /* _____ Button More _____ */
+
+    .item-more__btn {
+        padding: 18px 35px;
+    }
+
+    /* __________ Our Activity Description (Second Subblock) __________ */
+
+    .subblock-second {
+        max-width: 924px;
+        width: 100%;
+    }
+
+    .item-subblock__list {
+        padding-left: 76px;
+    }
+
+    /* ____________________ Stages (SECTION) ____________________ */
+
+    .stages {
+        padding-top: 81px;
+    }
+
+    /* __________ Stages Steps (TABS) __________ */
+
+    .steps {
+        padding-bottom: 47px;
+    }
+
+    /* __________ Details Services (TABS) __________ */
+
+    .details-stages__descr {
+        padding-bottom: 24px;
+        max-width: 437px;
+    }
+
+    /* __________ Picture Block (TABS) ___________ */
+
+    .pictureblock {
+        padding-top: 11px;
+    }
+
+    /* ____________________ Questions (SECTION) ____________________ */
+
+    .questions {
+        padding-top: 76px;
+    }
+
+    .item-acc__title {
+        padding: 38px 0 38px 0;
+        max-width: 756px;
+        font-size: 20px;
+    }
+
+    .accordion__item:nth-child(2) .item-acc__title {
+        padding-top: 28px;
+        padding-bottom: 30px;
+    }
+
+    .accordion__item:nth-child(4) .item-acc__title {
+        padding-top: 28px;
+        padding-bottom: 30px;
+    }
+
+    /* _________________________ FOOTER _________________________ */
+
+    .footer {
+        padding: 49px 0 41px 0;
+    }
+
+    .footerinfo {
+        margin-right: 33px;
+    }
+
+    /* __________ Footer (BLOCK 2 - Leave application)  __________ */
+
+    .leaveapplication__send {
+        justify-content: space-between;
+    }
+
+    /* _____ Send Data Button _____ */
+
+    .leaveapplication__btnblock-btn {
+        margin-right: 10px;
+        padding: 20px 27px;
+    }
+
+    /* __________ Footer (BLOCK 3 - Description)  __________ */
+
+    .footer__description {
+        display: none;
+    }
+}

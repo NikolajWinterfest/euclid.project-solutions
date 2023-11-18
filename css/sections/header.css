@@ -1,0 +1,262 @@
+/* _________________________ HEADER _________________________ */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 51;
+    border-end-start-radius: var(--borrad-3);
+    border-end-end-radius: var(--borrad-3);
+    background-color: var(--color_white);
+    box-shadow: 1px 1px 35px var(--color_gray-1);
+}
+
+.header__wrapper {
+    align-items: center;
+    width: 100%;
+}
+
+/* __________ Menu Navigation __________ */
+
+.nav {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    animation: nav-animation-open 0.5s ease;
+}
+
+.menu__burger,
+.menu__overlay {
+    display: none;
+}
+
+/* _____ Block Logo (Block 1) _____ */
+
+.nav__logoblock {
+    padding: 2px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+    transform: translate(-5px, 2px);
+    transition: border-color 0.3s ease;
+}
+
+/* -(pseudo-elements for Logo)- */
+
+.nav__logoblock:focus-visible {
+    border-color: var(--color_orange-1);
+    transition: border-color 0.3s ease;
+}
+
+/* _____ Items (Block 2) _____ */
+
+.menu__list {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 85px;
+}
+
+.menu__item-link {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+    border: 2px solid transparent;
+    outline: none;
+    color: var(--color_black);
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+/* -(pseudo-elements for Link's)- */
+
+.menu__item-link:focus-visible {
+    border-color: var(--color_orange-1);
+    transition: border-color 0.3s ease;
+}
+
+.menu__item-link::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color_orange-1);
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.6s ease;
+}
+
+@media (any-hover: hover) {
+    .menu__item-link:hover:focus-visible {
+        border-color: transparent;
+    }
+
+    .menu__item-link:hover::after {
+        width: 100%;
+        opacity: 1;
+        transition:
+            width 0.4s ease,
+            background-color 0.3s ease,
+            opacity 0.3s ease;
+    }
+}
+
+.menu__item-link:active::after {
+    width: 100%;
+    opacity: 1;
+    color: var(--color_orange-2);
+    background-color: var(--color_orange-2);
+    transition:
+        width 0.4s ease,
+        background-color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.menu__item-link:active:focus-visible {
+    border-color: transparent;
+}
+
+.menu__item-link:active {
+    color: var(--color_orange-2);
+    transition: color 0.3s ease;
+}
+
+/* _____ Search Button (Block 3) _____ */
+
+.search {
+    position: absolute;
+    right: 0;
+    align-items: center;
+    max-width: 539px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.search.is-active {
+    pointer-events: visible;
+}
+
+.nav__openbtn {
+    transform: translateX(5px);
+}
+
+.nav__openbtn,
+.activeblock__searchbtn,
+.activeblock__closebtn {
+    z-index: 2;
+    padding: 3px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.nav__openbtn-icon rect,
+.nav__openbtn-icon path {
+    stroke: var(--color_black);
+    transition: stroke 0.3s ease;
+}
+
+.activeblock__closebtn-icon circle {
+    stroke: var(--color_gray-1);
+    transition: stroke 0.3s ease;
+}
+
+.activeblock__closebtn-icon rect {
+    fill: var(--color_gray-1);
+    transition: fill 0.3s ease;
+}
+
+/* -(pseudo-elements for Search Button) --- */
+
+.nav__openbtn:focus-visible,
+.activeblock__searchbtn:focus-visible,
+.activeblock__closebtn:focus-visible {
+    border: 2px solid var(--color_orange-1);
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+@media (any-hover: hover) {
+
+    .nav__openbtn:hover .nav__openbtn-icon rect,
+    .nav__openbtn:hover .nav__openbtn-icon path,
+    .activeblock__closebtn:hover .activeblock__closebtn-icon circle {
+        stroke: var(--color_orange-1);
+        transition: stroke 0.3s ease;
+    }
+
+    .activeblock__closebtn:hover .activeblock__closebtn-icon rect {
+        fill: var(--color_orange-1);
+        transition: fill 0.3s ease;
+    }
+
+    .nav__openbtn:hover.nav__openbtn:focus-visible,
+    .activeblock__searchbtn:hover.activeblock__searchbtn:focus-visible,
+    .activeblock__closebtn:hover.activeblock__closebtn:focus-visible {
+        border-color: transparent;
+    }
+}
+
+.activeblock__closebtn:active .activeblock__closebtn-icon circle {
+    stroke: var(--color_black);
+    transition: stroke 0.3s ease;
+}
+
+.activeblock__closebtn:active .activeblock__closebtn-icon rect {
+    fill: var(--color_black);
+    transition: fill 0.3s ease;
+}
+
+/* _____ Disable Search _____ */
+
+.activeblock {
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 13px;
+    max-width: 539px;
+    width: 100%;
+    height: 60px;
+    border-radius: var(--borrad-2);
+    background-color: var(--color_white);
+    box-shadow: 1px 1px 10px var(--color_gray-1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.activeblock__input {
+    max-width: 412px;
+    margin-right: 14px;
+    width: 100%;
+    border-bottom: 1px solid var(--color_gray-1);
+    background-color: var(--color_white);
+}
+
+.activeblock__searchbtn {
+    margin-right: 8px;
+}
+
+/* _____ Active Search _____ */
+
+.activeblock.is-active {
+    max-width: 539px;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.5s ease;
+}
+
+.is-disable {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}

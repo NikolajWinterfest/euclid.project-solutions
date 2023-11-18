@@ -1,0 +1,395 @@
+@media (max-width: 576px) {
+    /* _________________________ GLOBAL _________________________ */
+
+    .container {
+        padding: 0 15px;
+        max-width: 320px;
+    }
+
+    /* _________________________ HEADER _________________________ */
+
+    .header {
+        height: 69px;
+        border-end-start-radius: var(--borrad-3);
+        border-end-end-radius: var(--borrad-3);
+    }
+
+    /* __________ Menu Navigation __________ */
+
+    .menu__list {
+        font-size: 16px;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    /* ----- Burger Menu Active ----- */
+
+    .menu__overlay {
+        max-width: 320px;
+        height: 407px;
+    }
+
+    /* _____ Search Button (Block 3) _____ */
+
+    .search {
+        justify-content: center;
+    }
+
+    /* _____ Active Search _____ */
+
+    .activeblock.is-active {
+        max-width: 320px;
+        height: 69px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    /* _________________________ MAIN _________________________ */
+
+    .main {
+        padding-top: 99px;
+        padding-bottom: 11px;
+    }
+
+    /* ____________________ Hero (SECTION) ____________________ */
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 79px;
+    }
+
+    .hero__block {
+        padding-left: 10px;
+        max-width: 280px;
+    }
+
+    .hero__title {
+        padding-bottom: 7px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero__descr {
+        padding-bottom: 33px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* _____ Order Button _____ */
+
+    .hero__order {
+        text-align: center;
+    }
+
+    .hero__order-btn {
+        padding: 13px 28px;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    /* ----- SWIPER ----- */
+
+    .hero__swiper {
+        max-width: 290px;
+        height: 308px;
+    }
+
+    .hero__background-one,
+    .hero__background-two,
+    .hero__background-three {
+        border-radius: var(--borrad-2);
+    }
+
+    .hero__background-one {
+        background: url('../../img/hero/hero__background-one\(320p\).jpg');
+    }
+
+    .hero__background-two {
+        background: url('../../img/hero/hero__background-two\(320p\).jpg');
+    }
+
+    .hero__background-three {
+        background: url('../../img/hero/hero__background-three\(320p\).jpg');
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* ____________________ AboutUs (SECTION) ____________________ */
+
+    .aboutus {
+        padding-top: 40px;
+    }
+
+    /* __________ Our Activity Description __________ */
+
+    .ouractivity__title {
+        font-size: 24px;
+    }
+
+    .ouractivity__descr {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    /* __________ Our Activity Description (Subblock) __________ */
+
+    .ourwork {
+        padding-top: 12px;
+    }
+
+    /* __________ Our Activity Description (First Subblock) __________ */
+
+    .subblock-first {
+        margin-bottom: 10px;
+        max-width: 290px;
+        height: 200px;
+        border-radius: var(--borrad-2);
+        background: url('../../img/aboutus/aboutus__background\(320p\).jpg');
+    }
+
+    .subblock-first__descrblock {
+        display: none;
+    }
+
+    /* _____ Doubleblock _____ */
+
+    .doubleblock {
+        display: block;
+    }
+
+    .doubleblock__descr {
+        padding-bottom: 11px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .doubleblock-more__btn {
+        max-width: 162px;
+        width: 100%;
+        height: 39px;
+        border: 2px solid var(--color_orange-1);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    /* __________ Our Activity Description (Second Subblock) __________ */
+
+    .subblock-second {
+        max-width: 290px;
+    }
+
+    .item-subblock:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .item-subblock__list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 31px 0 0 0;
+        border: none;
+    }
+
+    .item-subblock:last-child .item-subblock__list {
+        padding-top: 23px;
+    }
+
+    .item-subblock__item {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .item-subblock__item-title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .item-subblock__item-descr {
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    /* ____________________ Stages (SECTION) ____________________ */
+
+    .stages {
+        padding-top: 52px;
+    }
+
+    .stages__title {
+        padding-bottom: 16px;
+        font-size: 24px;
+    }
+
+    /* __________ Stages Steps (TABS) __________ */
+
+    .steps {
+        padding-bottom: 0;
+    }
+
+    .steps__item {
+        transform: translateX(-5px);
+    }
+
+    .steps__item:nth-child(2) {
+        transform: translateX(-3px);
+    }
+
+    .steps__item:nth-child(3) {
+        transform: translateX(0px);
+    }
+
+    .steps__item:nth-child(4) {
+        transform: translateX(2px);
+    }
+
+    .steps__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    /* _____ (TABS) Button's _____ */
+
+    .steps__item-btn {
+        font-size: 14px;
+    }
+
+    /* __________ Details Services (TABS) __________ */
+
+    .details-stages__title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .details-stages__descr {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .buttonsgroup__more,
+    .buttonsgroup__agreement {
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .buttonsgroup__more {
+        margin-right: 6px;
+        padding: 12px 44px;
+    }
+
+    .buttonsgroup__agreement {
+        padding: 12px 31px;
+    }
+
+    /* __________ Picture Block (TABS) ___________ */
+
+    .pictureblock {
+        padding-bottom: 12px;
+    }
+
+    /* ____________________ Questions (SECTION) ____________________ */
+
+    .questions {
+        padding-top: 59px;
+    }
+
+    .questions__title {
+        padding-bottom: 16px;
+        font-size: 24px;
+    }
+
+    /* _____ Button Accordion _____ */
+
+    .item-acc__title {
+        padding: 29px 0 29px 0;
+        max-width: 250px;
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    .item-acc__btn-icon {
+        width: 30px;
+    }
+
+    /* _________________________ FOOTER _________________________ */
+
+    .footer {
+        padding-top: 33px;
+        padding-bottom: 11px;
+    }
+
+    .footerinfo {
+        align-items: center;
+        margin-right: 0;
+    }
+
+    /* __________ Footer (BLOCK 1 - information) __________ */
+
+    .footerinfo__picture {
+        display: flex;
+    }
+
+    .footerinfo__logoblock {
+        margin-bottom: 1px;
+        transform: translateY(5px);
+    }
+
+    .footerinfo__socialnetworks {
+        transform: translateX(0);
+    }
+
+    .socialnetworks__one {
+        margin-right: 4px;
+    }
+
+    .socialnetworks__one-icon,
+    .socialnetworks__two-icon {
+        width: 40px;
+    }
+
+    /* __________ Footer (BLOCK 2 - Leave application)  __________ */
+
+    .leaveapplication {
+        max-width: 290px;
+        padding-bottom: 24px;
+    }
+
+    .leaveapplication__title {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .leaveapplication__persondata {
+        margin-bottom: 26px;
+        font-size: 14px;
+    }
+
+    .leaveapplication__persondata-name,
+    .leaveapplication__persondata-email {
+        margin-bottom: 27px;
+    }
+
+    .leaveapplication__send {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leaveapplication__btnblock {
+        padding-bottom: 12px;
+
+    }
+
+    .leaveapplication__btnblock-btn {
+        margin-right: 0;
+        padding: 12px 28px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+}

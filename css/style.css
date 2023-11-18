@@ -1,0 +1,26 @@
+/* Fonts */
+@import url('fonts/fonts.css');
+
+/* Default Settings */
+@import url('globals/default.css');
+
+/* Global Settings */
+@import url('globals/global.css');
+
+/* Header */
+@import url('sections/header.css');
+
+/* Main and Hero Section */
+@import url('sections/hero.css');
+
+/* About Us Section */
+@import url('sections/aboutus.css');
+
+/* Stages Section */
+@import url('sections/stages.css');
+
+/* Questions Section */
+@import url('sections/questions.css');
+
+/* Footer */
+@import url('sections/footer.css');
