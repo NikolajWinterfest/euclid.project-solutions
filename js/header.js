@@ -99,7 +99,7 @@ export const header = () => {
         elem.forEach((link) => {
             link.addEventListener('click', (event) => {
                 event.preventDefault()
-                const targetId = event.target.getAttribute('href')
+                const targetId = link.getAttribute('href')
                 if (targetId && targetId.length > 1) {
                     document.querySelector(targetId).scrollIntoView({
                         behavior: 'smooth',
