@@ -1,5 +1,9 @@
 ## О проекте
 
+<div>
+  <img src="/Euclid_Project-solutions.png" title="Euclid" alt="Euclid" />&nbsp;
+</div>
+
 ### Цель проекта:
 
 Сверстать лендинг страницу по HTML макету [Эвклид](<https://www.figma.com/file/hMBuZF29jkB2hZbG7UWOv3/Cld-(Copy)?type=design&mode=design&t=A4gXeNpWh8LcaZ24-0>) (Макет частично устарел, некоторые данные текста изменились)
