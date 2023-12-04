@@ -6,7 +6,7 @@
 
 ### Цель проекта:
 
-Сверстать лендинг страницу по HTML макету [Эвклид](<https://www.figma.com/file/hMBuZF29jkB2hZbG7UWOv3/Cld-(Copy)?type=design&mode=design&t=A4gXeNpWh8LcaZ24-0>) (Макет частично устарел, некоторые данные текста изменились)
+Сверстать лендинг страницу по макету [Эвклид](<https://www.figma.com/file/hMBuZF29jkB2hZbG7UWOv3/Cld-(Copy)?type=design&mode=design&t=A4gXeNpWh8LcaZ24-0>) (Макет частично устарел, некоторые данные текста изменились)
 
 ### Задачи проекта:
 
